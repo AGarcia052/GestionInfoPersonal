@@ -14,5 +14,10 @@ namespace GestionInfoPersonal
             mthCFechaNacimiento.SetDate(DateTime.Now.AddYears(-edad));
 
         }
+
+        private void trkPuntuacion_Scroll(object sender, EventArgs e)
+        {
+            lblPuntuacion.Text = trkPuntuacion.Value.ToString();
+        }
     }
 }
