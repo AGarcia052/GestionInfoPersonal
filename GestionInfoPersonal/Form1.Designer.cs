@@ -65,6 +65,7 @@
             btnGuardar = new Button();
             btnLimpiar = new Button();
             btnSalir = new Button();
+            lblGuardar = new Label();
             tbCPrincipal.SuspendLayout();
             tbPDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numUPEdad).BeginInit();
@@ -409,12 +410,21 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
+            // lblGuardar
+            // 
+            lblGuardar.BackColor = SystemColors.Window;
+            lblGuardar.Location = new Point(803, 41);
+            lblGuardar.Name = "lblGuardar";
+            lblGuardar.Size = new Size(251, 376);
+            lblGuardar.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Bisque;
             ClientSize = new Size(1103, 549);
+            Controls.Add(lblGuardar);
             Controls.Add(btnSalir);
             Controls.Add(btnLimpiar);
             Controls.Add(btnGuardar);
@@ -476,5 +486,6 @@
         private Button btnGuardar;
         private Button btnLimpiar;
         private Button btnSalir;
+        private Label lblGuardar;
     }
 }
