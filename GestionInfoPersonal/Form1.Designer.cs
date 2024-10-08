@@ -46,11 +46,22 @@
             lblDireccion = new Label();
             lblNombre = new Label();
             tbPPreferencias = new TabPage();
+            lblPuntuacion = new Label();
+            lblPuntuaciónForm = new Label();
+            lblPais = new Label();
+            lblHobbies = new Label();
+            trkPuntuacion = new TrackBar();
+            cmbPais = new ComboBox();
+            chLBHobbies = new CheckedListBox();
+            chBTerminos = new CheckBox();
+            chBSuscripcion = new CheckBox();
             tbPVisualizacion = new TabPage();
             tbCPrincipal.SuspendLayout();
             tbPDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numUPEdad).BeginInit();
             pnlGenero.SuspendLayout();
+            tbPPreferencias.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trkPuntuacion).BeginInit();
             SuspendLayout();
             // 
             // tbCPrincipal
@@ -222,6 +233,15 @@
             // 
             // tbPPreferencias
             // 
+            tbPPreferencias.Controls.Add(lblPuntuacion);
+            tbPPreferencias.Controls.Add(lblPuntuaciónForm);
+            tbPPreferencias.Controls.Add(lblPais);
+            tbPPreferencias.Controls.Add(lblHobbies);
+            tbPPreferencias.Controls.Add(trkPuntuacion);
+            tbPPreferencias.Controls.Add(cmbPais);
+            tbPPreferencias.Controls.Add(chLBHobbies);
+            tbPPreferencias.Controls.Add(chBTerminos);
+            tbPPreferencias.Controls.Add(chBSuscripcion);
             tbPPreferencias.Location = new Point(4, 29);
             tbPPreferencias.Name = "tbPPreferencias";
             tbPPreferencias.Padding = new Padding(3);
@@ -229,6 +249,87 @@
             tbPPreferencias.TabIndex = 1;
             tbPPreferencias.Text = "Preferencias";
             tbPPreferencias.UseVisualStyleBackColor = true;
+            // 
+            // lblPuntuacion
+            // 
+            lblPuntuacion.Location = new Point(544, 219);
+            lblPuntuacion.Name = "lblPuntuacion";
+            lblPuntuacion.Size = new Size(62, 25);
+            lblPuntuacion.TabIndex = 9;
+            // 
+            // lblPuntuaciónForm
+            // 
+            lblPuntuaciónForm.AutoSize = true;
+            lblPuntuaciónForm.Location = new Point(41, 220);
+            lblPuntuaciónForm.Name = "lblPuntuaciónForm";
+            lblPuntuaciónForm.Size = new Size(158, 20);
+            lblPuntuaciónForm.TabIndex = 7;
+            lblPuntuaciónForm.Text = "Puntuación Formulario";
+            // 
+            // lblPais
+            // 
+            lblPais.AutoSize = true;
+            lblPais.Location = new Point(41, 158);
+            lblPais.Name = "lblPais";
+            lblPais.Size = new Size(34, 20);
+            lblPais.TabIndex = 6;
+            lblPais.Text = "País";
+            // 
+            // lblHobbies
+            // 
+            lblHobbies.AutoSize = true;
+            lblHobbies.Location = new Point(41, 63);
+            lblHobbies.Name = "lblHobbies";
+            lblHobbies.Size = new Size(65, 20);
+            lblHobbies.TabIndex = 5;
+            lblHobbies.Text = "Hobbies";
+            // 
+            // trkPuntuacion
+            // 
+            trkPuntuacion.Location = new Point(219, 200);
+            trkPuntuacion.Name = "trkPuntuacion";
+            trkPuntuacion.Size = new Size(307, 56);
+            trkPuntuacion.TabIndex = 4;
+            trkPuntuacion.Scroll += trkPuntuacion_Scroll;
+            // 
+            // cmbPais
+            // 
+            cmbPais.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbPais.FormattingEnabled = true;
+            cmbPais.Items.AddRange(new object[] { "España", "Honduras", "Nicaragua", "Guatemala" });
+            cmbPais.Location = new Point(219, 150);
+            cmbPais.Name = "cmbPais";
+            cmbPais.Size = new Size(151, 28);
+            cmbPais.TabIndex = 3;
+            // 
+            // chLBHobbies
+            // 
+            chLBHobbies.FormattingEnabled = true;
+            chLBHobbies.Items.AddRange(new object[] { "Fútbol", "Senderismo", "Películas", "Fiesta" });
+            chLBHobbies.Location = new Point(220, 21);
+            chLBHobbies.Name = "chLBHobbies";
+            chLBHobbies.Size = new Size(150, 114);
+            chLBHobbies.TabIndex = 8;
+            // 
+            // chBTerminos
+            // 
+            chBTerminos.AutoSize = true;
+            chBTerminos.Location = new Point(41, 319);
+            chBTerminos.Name = "chBTerminos";
+            chBTerminos.Size = new Size(306, 24);
+            chBTerminos.TabIndex = 1;
+            chBTerminos.Text = "Acepto los términos y condiciones de uso";
+            chBTerminos.UseVisualStyleBackColor = true;
+            // 
+            // chBSuscripcion
+            // 
+            chBSuscripcion.AutoSize = true;
+            chBSuscripcion.Location = new Point(41, 280);
+            chBSuscripcion.Name = "chBSuscripcion";
+            chBSuscripcion.Size = new Size(225, 24);
+            chBSuscripcion.TabIndex = 0;
+            chBSuscripcion.Text = "Acepto suscribirme al boletín";
+            chBSuscripcion.UseVisualStyleBackColor = true;
             // 
             // tbPVisualizacion
             // 
@@ -255,6 +356,9 @@
             ((System.ComponentModel.ISupportInitialize)numUPEdad).EndInit();
             pnlGenero.ResumeLayout(false);
             pnlGenero.PerformLayout();
+            tbPPreferencias.ResumeLayout(false);
+            tbPPreferencias.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trkPuntuacion).EndInit();
             ResumeLayout(false);
         }
 
@@ -279,5 +383,16 @@
         private MonthCalendar mthCFechaNacimiento;
         private Label lblEdad;
         private Label lblFechaNac;
+        private TrackBar trkPuntuacion;
+        private ComboBox cmbPais;
+        private CheckedListBox chLBHobbies;
+        private CheckBox chBTerminos;
+        private CheckBox chBSuscripcion;
+        private Label lblPuntuaciónForm;
+        private Label lblPais;
+        private Label lblHobbies;
+        private Label lblPuntuacion;
+        private Label label1;
+        private PictureBox picBImgPerfil;
     }
 }
