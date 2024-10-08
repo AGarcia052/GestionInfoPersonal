@@ -62,6 +62,9 @@
             picImgPerfil = new PictureBox();
             timerFecha = new System.Windows.Forms.Timer(components);
             toolTip1 = new ToolTip(components);
+            btnGuardar = new Button();
+            btnLimpiar = new Button();
+            btnSalir = new Button();
             tbCPrincipal.SuspendLayout();
             tbPDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numUPEdad).BeginInit();
@@ -376,12 +379,45 @@
             // 
             toolTip1.BackColor = Color.PaleTurquoise;
             // 
+            // btnGuardar
+            // 
+            btnGuardar.Location = new Point(627, 452);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(122, 45);
+            btnGuardar.TabIndex = 1;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
+            // 
+            // btnLimpiar
+            // 
+            btnLimpiar.Location = new Point(61, 452);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(122, 45);
+            btnLimpiar.TabIndex = 2;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
+            // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(344, 452);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(122, 45);
+            btnSalir.TabIndex = 3;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Bisque;
-            ClientSize = new Size(944, 542);
+            ClientSize = new Size(1103, 549);
+            Controls.Add(btnSalir);
+            Controls.Add(btnLimpiar);
+            Controls.Add(btnGuardar);
             Controls.Add(tbCPrincipal);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
@@ -437,5 +473,8 @@
         private PictureBox picImgPerfil;
         private System.Windows.Forms.Timer timerFecha;
         private ToolTip toolTip1;
+        private Button btnGuardar;
+        private Button btnLimpiar;
+        private Button btnSalir;
     }
 }
