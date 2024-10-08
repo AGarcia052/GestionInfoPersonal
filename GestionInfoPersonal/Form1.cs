@@ -19,5 +19,10 @@ namespace GestionInfoPersonal
         {
             lblPuntuacion.Text = trkPuntuacion.Value.ToString();
         }
+
+        private void timerFecha_Tick(object sender, EventArgs e)
+        {
+            lblFechaHora.Text = DateTime.Now.ToString();
+        }
     }
 }

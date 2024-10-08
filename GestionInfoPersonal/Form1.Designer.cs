@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             tbCPrincipal = new TabControl();
             tbPDatos = new TabPage();
             lblFechaNac = new Label();
@@ -56,12 +57,18 @@
             chBTerminos = new CheckBox();
             chBSuscripcion = new CheckBox();
             tbPVisualizacion = new TabPage();
+            lblFechaHora = new Label();
+            picImgPerfil = new PictureBox();
+            timerFecha = new System.Windows.Forms.Timer(components);
+            toolTip1 = new ToolTip(components);
             tbCPrincipal.SuspendLayout();
             tbPDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numUPEdad).BeginInit();
             pnlGenero.SuspendLayout();
             tbPPreferencias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trkPuntuacion).BeginInit();
+            tbPVisualizacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picImgPerfil).BeginInit();
             SuspendLayout();
             // 
             // tbCPrincipal
@@ -333,6 +340,8 @@
             // 
             // tbPVisualizacion
             // 
+            tbPVisualizacion.Controls.Add(lblFechaHora);
+            tbPVisualizacion.Controls.Add(picImgPerfil);
             tbPVisualizacion.Location = new Point(4, 29);
             tbPVisualizacion.Name = "tbPVisualizacion";
             tbPVisualizacion.Size = new Size(733, 372);
@@ -340,12 +349,38 @@
             tbPVisualizacion.Text = "Visualización";
             tbPVisualizacion.UseVisualStyleBackColor = true;
             // 
+            // lblFechaHora
+            // 
+            lblFechaHora.Location = new Point(486, 37);
+            lblFechaHora.Name = "lblFechaHora";
+            lblFechaHora.Size = new Size(213, 25);
+            lblFechaHora.TabIndex = 1;
+            // 
+            // picImgPerfil
+            // 
+            picImgPerfil.Image = Properties.Resources.PERFIL_VACIO;
+            picImgPerfil.Location = new Point(32, 173);
+            picImgPerfil.Name = "picImgPerfil";
+            picImgPerfil.Size = new Size(183, 179);
+            picImgPerfil.TabIndex = 0;
+            picImgPerfil.TabStop = false;
+            // 
+            // timerFecha
+            // 
+            timerFecha.Enabled = true;
+            timerFecha.Interval = 1000;
+            timerFecha.Tick += timerFecha_Tick;
+            // 
+            // toolTip1
+            // 
+            toolTip1.BackColor = Color.PaleTurquoise;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Bisque;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(944, 542);
             Controls.Add(tbCPrincipal);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
@@ -359,6 +394,8 @@
             tbPPreferencias.ResumeLayout(false);
             tbPPreferencias.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)trkPuntuacion).EndInit();
+            tbPVisualizacion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picImgPerfil).EndInit();
             ResumeLayout(false);
         }
 
@@ -394,5 +431,9 @@
         private Label lblPuntuacion;
         private Label label1;
         private PictureBox picBImgPerfil;
+        private Label lblFechaHora;
+        private PictureBox picImgPerfil;
+        private System.Windows.Forms.Timer timerFecha;
+        private ToolTip toolTip1;
     }
 }
