@@ -39,7 +39,14 @@ namespace GestionInfoPersonal
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-
+            lblGuardar.Text = "";
+            txtNombre.Clear();
+            txtDireccion.Clear();
+            txtCorreo.Clear();
+            numUPEdad.Value = 0;
+            rboHombre.Checked = false;
+            rboMujer.Checked = false;
+            rboOtro.Checked = false;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
