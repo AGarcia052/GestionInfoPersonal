@@ -1,4 +1,5 @@
 using GestionInfoPersonal.Properties;
+using System.Text;
 
 namespace GestionInfoPersonal
 {
@@ -48,7 +49,40 @@ namespace GestionInfoPersonal
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            string nombre = txtNombre.Text;
+            string direccion = txtDireccion.Text;
+            string correo = txtCorreo.Text;
+            string genero;
 
+            if (rboHombre.Checked)
+                genero = rboHombre.Text;
+            else if (rboMujer.Checked)
+                genero = rboMujer.Text;
+            else genero = rboOtro.Text;
+
+            string fechaNac = mthCFechaNacimiento.SelectionStart.ToString();
+            int edad = int.Parse(numUPEdad.Text);
+            string suscritoBoletin;
+            if (chBSuscripcion.Checked)
+                suscritoBoletin = "Suscrito al boletín: Sí";
+            else
+                suscritoBoletin = "Suscrito al boletín: No";
+            string aceptaTerminos;
+            if (chBTerminos.Checked)
+                aceptaTerminos = "Acepta los términos: Sí";
+            else aceptaTerminos = "Acepta los términos: No";
+
+            String hobbies = "";
+
+            foreach(var item in chLBHobbies.CheckedItems)
+            {
+                hobbies += item.ToString()+", ";
+            }
+
+            string pais = cmbPais.Text;
+            Resumen resumen = new Resumen(nombre,direccion,correo,genero,fechaNac,edad,suscritoBoletin,aceptaTerminos,hobbies,pais);
+
+            lblGuardar.Text = resumen.ToString();
         }
     }
 }
