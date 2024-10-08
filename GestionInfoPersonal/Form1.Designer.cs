@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tbCPrincipal = new TabControl();
             tbPDatos = new TabPage();
             lblFechaNac = new Label();
@@ -358,7 +359,7 @@
             // 
             // picImgPerfil
             // 
-            picImgPerfil.Image = Properties.Resources.PERFIL_VACIO;
+            picImgPerfil.Image = (Image)resources.GetObject("picImgPerfil.Image");
             picImgPerfil.Location = new Point(32, 173);
             picImgPerfil.Name = "picImgPerfil";
             picImgPerfil.Size = new Size(183, 179);
@@ -385,6 +386,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "FormPrincipal";
+            Load += Form1_Load;
             tbCPrincipal.ResumeLayout(false);
             tbPDatos.ResumeLayout(false);
             tbPDatos.PerformLayout();
