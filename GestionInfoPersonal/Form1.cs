@@ -74,7 +74,7 @@ namespace GestionInfoPersonal
                 genero = rboMujer.Text;
             else genero = rboOtro.Text;
 
-            string fechaNac = mthCFechaNacimiento.SelectionStart.ToString();
+            string fechaNac = mthCFechaNacimiento.SelectionStart.ToString("dd/MM/yyyy");
             int edad = int.Parse(numUPEdad.Text);
             string suscritoBoletin;
             if (chBSuscripcion.Checked)
