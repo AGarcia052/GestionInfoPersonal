@@ -88,13 +88,13 @@ namespace GestionInfoPersonal
 
             String hobbies = "";
 
-            foreach(var item in chLBHobbies.CheckedItems)
+            foreach (var item in chLBHobbies.CheckedItems)
             {
-                hobbies += item.ToString()+", ";
+                hobbies += item.ToString() + ", ";
             }
 
             string pais = cmbPais.Text;
-            Resumen resumen = new Resumen(nombre,direccion,correo,genero,fechaNac,edad,suscritoBoletin,aceptaTerminos,hobbies,pais);
+            Resumen resumen = new Resumen(nombre, direccion, correo, genero, fechaNac, edad, suscritoBoletin, aceptaTerminos, hobbies, pais);
 
             lblGuardar.Text = resumen.ToString();
         }

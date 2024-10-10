@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tbCPrincipal = new TabControl();
             tbPDatos = new TabPage();
             lblFechaNac = new Label();
@@ -81,10 +80,11 @@
             tbCPrincipal.Controls.Add(tbPDatos);
             tbCPrincipal.Controls.Add(tbPPreferencias);
             tbCPrincipal.Controls.Add(tbPVisualizacion);
-            tbCPrincipal.Location = new Point(25, 12);
+            tbCPrincipal.Location = new Point(22, 9);
+            tbCPrincipal.Margin = new Padding(3, 2, 3, 2);
             tbCPrincipal.Name = "tbCPrincipal";
             tbCPrincipal.SelectedIndex = 0;
-            tbCPrincipal.Size = new Size(741, 405);
+            tbCPrincipal.Size = new Size(648, 304);
             tbCPrincipal.TabIndex = 0;
             // 
             // tbPDatos
@@ -100,10 +100,11 @@
             tbPDatos.Controls.Add(lblCorreo);
             tbPDatos.Controls.Add(lblDireccion);
             tbPDatos.Controls.Add(lblNombre);
-            tbPDatos.Location = new Point(4, 29);
+            tbPDatos.Location = new Point(4, 24);
+            tbPDatos.Margin = new Padding(3, 2, 3, 2);
             tbPDatos.Name = "tbPDatos";
-            tbPDatos.Padding = new Padding(3);
-            tbPDatos.Size = new Size(733, 372);
+            tbPDatos.Padding = new Padding(3, 2, 3, 2);
+            tbPDatos.Size = new Size(640, 276);
             tbPDatos.TabIndex = 0;
             tbPDatos.Text = "Datos Personales";
             tbPDatos.UseVisualStyleBackColor = true;
@@ -111,32 +112,34 @@
             // lblFechaNac
             // 
             lblFechaNac.AutoSize = true;
-            lblFechaNac.Location = new Point(551, 124);
+            lblFechaNac.Location = new Point(482, 93);
             lblFechaNac.Name = "lblFechaNac";
-            lblFechaNac.Size = new Size(128, 20);
+            lblFechaNac.Size = new Size(103, 15);
             lblFechaNac.TabIndex = 11;
             lblFechaNac.Text = "Fecha Nacimiento";
             // 
             // lblEdad
             // 
             lblEdad.AutoSize = true;
-            lblEdad.Location = new Point(501, 34);
+            lblEdad.Location = new Point(438, 26);
             lblEdad.Name = "lblEdad";
-            lblEdad.Size = new Size(43, 20);
+            lblEdad.Size = new Size(33, 15);
             lblEdad.TabIndex = 10;
             lblEdad.Text = "Edad";
             // 
             // numUPEdad
             // 
-            numUPEdad.Location = new Point(571, 27);
+            numUPEdad.Location = new Point(500, 20);
+            numUPEdad.Margin = new Padding(3, 2, 3, 2);
             numUPEdad.Name = "numUPEdad";
-            numUPEdad.Size = new Size(150, 27);
+            numUPEdad.Size = new Size(131, 23);
             numUPEdad.TabIndex = 9;
             numUPEdad.ValueChanged += numUPEdad_ValueChanged;
             // 
             // mthCFechaNacimiento
             // 
-            mthCFechaNacimiento.Location = new Point(501, 153);
+            mthCFechaNacimiento.Location = new Point(438, 115);
+            mthCFechaNacimiento.Margin = new Padding(8, 7, 8, 7);
             mthCFechaNacimiento.Name = "mthCFechaNacimiento";
             mthCFechaNacimiento.TabIndex = 8;
             mthCFechaNacimiento.TodayDate = new DateTime(2024, 10, 8, 0, 0, 0, 0);
@@ -148,26 +151,28 @@
             pnlGenero.Controls.Add(rboOtro);
             pnlGenero.Controls.Add(rboHombre);
             pnlGenero.Controls.Add(rboMujer);
-            pnlGenero.Location = new Point(33, 163);
+            pnlGenero.Location = new Point(29, 122);
+            pnlGenero.Margin = new Padding(3, 2, 3, 2);
             pnlGenero.Name = "pnlGenero";
-            pnlGenero.Size = new Size(220, 145);
+            pnlGenero.Size = new Size(193, 109);
             pnlGenero.TabIndex = 7;
             // 
             // lblGenero
             // 
             lblGenero.AutoSize = true;
-            lblGenero.Location = new Point(3, 18);
+            lblGenero.Location = new Point(3, 14);
             lblGenero.Name = "lblGenero";
-            lblGenero.Size = new Size(60, 20);
+            lblGenero.Size = new Size(48, 15);
             lblGenero.TabIndex = 3;
             lblGenero.Text = "Género:";
             // 
             // rboOtro
             // 
             rboOtro.AutoSize = true;
-            rboOtro.Location = new Point(98, 100);
+            rboOtro.Location = new Point(86, 75);
+            rboOtro.Margin = new Padding(3, 2, 3, 2);
             rboOtro.Name = "rboOtro";
-            rboOtro.Size = new Size(60, 24);
+            rboOtro.Size = new Size(49, 19);
             rboOtro.TabIndex = 2;
             rboOtro.TabStop = true;
             rboOtro.Text = "Otro";
@@ -176,9 +181,10 @@
             // rboHombre
             // 
             rboHombre.AutoSize = true;
-            rboHombre.Location = new Point(98, 18);
+            rboHombre.Location = new Point(86, 14);
+            rboHombre.Margin = new Padding(3, 2, 3, 2);
             rboHombre.Name = "rboHombre";
-            rboHombre.Size = new Size(97, 24);
+            rboHombre.Size = new Size(80, 19);
             rboHombre.TabIndex = 0;
             rboHombre.TabStop = true;
             rboHombre.Text = "Masculino";
@@ -187,9 +193,10 @@
             // rboMujer
             // 
             rboMujer.AutoSize = true;
-            rboMujer.Location = new Point(98, 59);
+            rboMujer.Location = new Point(86, 44);
+            rboMujer.Margin = new Padding(3, 2, 3, 2);
             rboMujer.Name = "rboMujer";
-            rboMujer.Size = new Size(95, 24);
+            rboMujer.Size = new Size(78, 19);
             rboMujer.TabIndex = 1;
             rboMujer.TabStop = true;
             rboMujer.Text = "Femenino";
@@ -197,49 +204,52 @@
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(205, 115);
+            txtCorreo.Location = new Point(179, 86);
+            txtCorreo.Margin = new Padding(3, 2, 3, 2);
             txtCorreo.Name = "txtCorreo";
-            txtCorreo.Size = new Size(242, 27);
+            txtCorreo.Size = new Size(212, 23);
             txtCorreo.TabIndex = 5;
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new Point(205, 70);
+            txtDireccion.Location = new Point(179, 52);
+            txtDireccion.Margin = new Padding(3, 2, 3, 2);
             txtDireccion.Name = "txtDireccion";
-            txtDireccion.Size = new Size(242, 27);
+            txtDireccion.Size = new Size(212, 23);
             txtDireccion.TabIndex = 4;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(205, 27);
+            txtNombre.Location = new Point(179, 20);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(242, 27);
+            txtNombre.Size = new Size(212, 23);
             txtNombre.TabIndex = 3;
             // 
             // lblCorreo
             // 
             lblCorreo.AutoSize = true;
-            lblCorreo.Location = new Point(33, 122);
+            lblCorreo.Location = new Point(29, 92);
             lblCorreo.Name = "lblCorreo";
-            lblCorreo.Size = new Size(132, 20);
+            lblCorreo.Size = new Size(105, 15);
             lblCorreo.TabIndex = 2;
             lblCorreo.Text = "Correo Electrónico";
             // 
             // lblDireccion
             // 
             lblDireccion.AutoSize = true;
-            lblDireccion.Location = new Point(33, 70);
+            lblDireccion.Location = new Point(29, 52);
             lblDireccion.Name = "lblDireccion";
-            lblDireccion.Size = new Size(72, 20);
+            lblDireccion.Size = new Size(57, 15);
             lblDireccion.TabIndex = 1;
             lblDireccion.Text = "Dirección";
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(33, 27);
+            lblNombre.Location = new Point(29, 20);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(64, 20);
+            lblNombre.Size = new Size(51, 15);
             lblNombre.TabIndex = 0;
             lblNombre.Text = "Nombre";
             // 
@@ -254,53 +264,55 @@
             tbPPreferencias.Controls.Add(chLBHobbies);
             tbPPreferencias.Controls.Add(chBTerminos);
             tbPPreferencias.Controls.Add(chBSuscripcion);
-            tbPPreferencias.Location = new Point(4, 29);
+            tbPPreferencias.Location = new Point(4, 24);
+            tbPPreferencias.Margin = new Padding(3, 2, 3, 2);
             tbPPreferencias.Name = "tbPPreferencias";
-            tbPPreferencias.Padding = new Padding(3);
-            tbPPreferencias.Size = new Size(733, 372);
+            tbPPreferencias.Padding = new Padding(3, 2, 3, 2);
+            tbPPreferencias.Size = new Size(640, 276);
             tbPPreferencias.TabIndex = 1;
             tbPPreferencias.Text = "Preferencias";
             tbPPreferencias.UseVisualStyleBackColor = true;
             // 
             // lblPuntuacion
             // 
-            lblPuntuacion.Location = new Point(544, 219);
+            lblPuntuacion.Location = new Point(476, 164);
             lblPuntuacion.Name = "lblPuntuacion";
-            lblPuntuacion.Size = new Size(62, 25);
+            lblPuntuacion.Size = new Size(54, 19);
             lblPuntuacion.TabIndex = 9;
             // 
             // lblPuntuaciónForm
             // 
             lblPuntuaciónForm.AutoSize = true;
-            lblPuntuaciónForm.Location = new Point(41, 220);
+            lblPuntuaciónForm.Location = new Point(36, 165);
             lblPuntuaciónForm.Name = "lblPuntuaciónForm";
-            lblPuntuaciónForm.Size = new Size(158, 20);
+            lblPuntuaciónForm.Size = new Size(129, 15);
             lblPuntuaciónForm.TabIndex = 7;
             lblPuntuaciónForm.Text = "Puntuación Formulario";
             // 
             // lblPais
             // 
             lblPais.AutoSize = true;
-            lblPais.Location = new Point(41, 158);
+            lblPais.Location = new Point(36, 118);
             lblPais.Name = "lblPais";
-            lblPais.Size = new Size(34, 20);
+            lblPais.Size = new Size(28, 15);
             lblPais.TabIndex = 6;
             lblPais.Text = "País";
             // 
             // lblHobbies
             // 
             lblHobbies.AutoSize = true;
-            lblHobbies.Location = new Point(41, 63);
+            lblHobbies.Location = new Point(36, 47);
             lblHobbies.Name = "lblHobbies";
-            lblHobbies.Size = new Size(65, 20);
+            lblHobbies.Size = new Size(51, 15);
             lblHobbies.TabIndex = 5;
             lblHobbies.Text = "Hobbies";
             // 
             // trkPuntuacion
             // 
-            trkPuntuacion.Location = new Point(219, 200);
+            trkPuntuacion.Location = new Point(192, 150);
+            trkPuntuacion.Margin = new Padding(3, 2, 3, 2);
             trkPuntuacion.Name = "trkPuntuacion";
-            trkPuntuacion.Size = new Size(307, 56);
+            trkPuntuacion.Size = new Size(269, 45);
             trkPuntuacion.TabIndex = 4;
             trkPuntuacion.Scroll += trkPuntuacion_Scroll;
             // 
@@ -309,26 +321,29 @@
             cmbPais.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbPais.FormattingEnabled = true;
             cmbPais.Items.AddRange(new object[] { "España", "Honduras", "Nicaragua", "Guatemala" });
-            cmbPais.Location = new Point(219, 150);
+            cmbPais.Location = new Point(192, 112);
+            cmbPais.Margin = new Padding(3, 2, 3, 2);
             cmbPais.Name = "cmbPais";
-            cmbPais.Size = new Size(151, 28);
+            cmbPais.Size = new Size(133, 23);
             cmbPais.TabIndex = 3;
             // 
             // chLBHobbies
             // 
             chLBHobbies.FormattingEnabled = true;
             chLBHobbies.Items.AddRange(new object[] { "Fútbol", "Senderismo", "Películas", "Fiesta" });
-            chLBHobbies.Location = new Point(220, 21);
+            chLBHobbies.Location = new Point(192, 16);
+            chLBHobbies.Margin = new Padding(3, 2, 3, 2);
             chLBHobbies.Name = "chLBHobbies";
-            chLBHobbies.Size = new Size(150, 114);
+            chLBHobbies.Size = new Size(132, 76);
             chLBHobbies.TabIndex = 8;
             // 
             // chBTerminos
             // 
             chBTerminos.AutoSize = true;
-            chBTerminos.Location = new Point(41, 319);
+            chBTerminos.Location = new Point(36, 239);
+            chBTerminos.Margin = new Padding(3, 2, 3, 2);
             chBTerminos.Name = "chBTerminos";
-            chBTerminos.Size = new Size(306, 24);
+            chBTerminos.Size = new Size(246, 19);
             chBTerminos.TabIndex = 1;
             chBTerminos.Text = "Acepto los términos y condiciones de uso";
             chBTerminos.UseVisualStyleBackColor = true;
@@ -336,9 +351,10 @@
             // chBSuscripcion
             // 
             chBSuscripcion.AutoSize = true;
-            chBSuscripcion.Location = new Point(41, 280);
+            chBSuscripcion.Location = new Point(36, 210);
+            chBSuscripcion.Margin = new Padding(3, 2, 3, 2);
             chBSuscripcion.Name = "chBSuscripcion";
-            chBSuscripcion.Size = new Size(225, 24);
+            chBSuscripcion.Size = new Size(180, 19);
             chBSuscripcion.TabIndex = 0;
             chBSuscripcion.Text = "Acepto suscribirme al boletín";
             chBSuscripcion.UseVisualStyleBackColor = true;
@@ -347,26 +363,28 @@
             // 
             tbPVisualizacion.Controls.Add(lblFechaHora);
             tbPVisualizacion.Controls.Add(picImgPerfil);
-            tbPVisualizacion.Location = new Point(4, 29);
+            tbPVisualizacion.Location = new Point(4, 24);
+            tbPVisualizacion.Margin = new Padding(3, 2, 3, 2);
             tbPVisualizacion.Name = "tbPVisualizacion";
-            tbPVisualizacion.Size = new Size(733, 372);
+            tbPVisualizacion.Size = new Size(640, 276);
             tbPVisualizacion.TabIndex = 2;
             tbPVisualizacion.Text = "Visualización";
             tbPVisualizacion.UseVisualStyleBackColor = true;
             // 
             // lblFechaHora
             // 
-            lblFechaHora.Location = new Point(486, 37);
+            lblFechaHora.Location = new Point(425, 28);
             lblFechaHora.Name = "lblFechaHora";
-            lblFechaHora.Size = new Size(213, 25);
+            lblFechaHora.Size = new Size(186, 19);
             lblFechaHora.TabIndex = 1;
             // 
             // picImgPerfil
             // 
-            picImgPerfil.Image = (Image)resources.GetObject("picImgPerfil.Image");
-            picImgPerfil.Location = new Point(32, 173);
+            //picImgPerfil.Image = Properties.Resources.PERFIL_VACIO;
+            picImgPerfil.Location = new Point(28, 130);
+            picImgPerfil.Margin = new Padding(3, 2, 3, 2);
             picImgPerfil.Name = "picImgPerfil";
-            picImgPerfil.Size = new Size(183, 179);
+            picImgPerfil.Size = new Size(160, 134);
             picImgPerfil.TabIndex = 0;
             picImgPerfil.TabStop = false;
             // 
@@ -382,9 +400,10 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(627, 452);
+            btnGuardar.Location = new Point(549, 339);
+            btnGuardar.Margin = new Padding(3, 2, 3, 2);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(122, 45);
+            btnGuardar.Size = new Size(107, 34);
             btnGuardar.TabIndex = 1;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -392,9 +411,10 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(61, 452);
+            btnLimpiar.Location = new Point(53, 339);
+            btnLimpiar.Margin = new Padding(3, 2, 3, 2);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(122, 45);
+            btnLimpiar.Size = new Size(107, 34);
             btnLimpiar.TabIndex = 2;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
@@ -402,9 +422,10 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(344, 452);
+            btnSalir.Location = new Point(301, 339);
+            btnSalir.Margin = new Padding(3, 2, 3, 2);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(122, 45);
+            btnSalir.Size = new Size(107, 34);
             btnSalir.TabIndex = 3;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -413,23 +434,24 @@
             // lblGuardar
             // 
             lblGuardar.BackColor = SystemColors.Window;
-            lblGuardar.Location = new Point(803, 41);
+            lblGuardar.Location = new Point(703, 31);
             lblGuardar.Name = "lblGuardar";
-            lblGuardar.Size = new Size(251, 376);
+            lblGuardar.Size = new Size(220, 282);
             lblGuardar.TabIndex = 4;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Bisque;
-            ClientSize = new Size(1103, 549);
+            ClientSize = new Size(965, 412);
             Controls.Add(lblGuardar);
             Controls.Add(btnSalir);
             Controls.Add(btnLimpiar);
             Controls.Add(btnGuardar);
             Controls.Add(tbCPrincipal);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "FormPrincipal";
             Load += Form1_Load;
