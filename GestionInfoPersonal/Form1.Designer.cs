@@ -380,7 +380,6 @@
             // 
             // picImgPerfil
             // 
-            //picImgPerfil.Image = Properties.Resources.PERFIL_VACIO;
             picImgPerfil.Location = new Point(28, 130);
             picImgPerfil.Margin = new Padding(3, 2, 3, 2);
             picImgPerfil.Name = "picImgPerfil";
