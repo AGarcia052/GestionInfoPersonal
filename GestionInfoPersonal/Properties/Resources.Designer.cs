@@ -59,15 +59,5 @@ namespace GestionInfoPersonal.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap PERFIL_VACIO {
-            get {
-                object obj = ResourceManager.GetObject("PERFIL-VACIO", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
