@@ -47,6 +47,13 @@ namespace GestionInfoPersonal
             rboHombre.Checked = false;
             rboMujer.Checked = false;
             rboOtro.Checked = false;
+            chBSuscripcion.Checked = false;
+            chBTerminos.Checked = false;
+            cmbPais.SelectedIndex = -1;
+            for (int i = 0; i < chLBHobbies.Items.Count; i++)
+            {
+                chLBHobbies.SetItemChecked(i, false);
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
